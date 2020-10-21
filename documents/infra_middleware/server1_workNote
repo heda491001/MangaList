@@ -1,0 +1,33 @@
+
+## 2020/10/19
+# 安装npm vue
+做成一个webpack的样板
+参照： https://www.runoob.com/vue2/vue-install.html
+
+
+## 2020/10/19
+# 安装apache，jdk，tomcat
+yum -y install httpd
+yum -y install java
+yum -y install tomcat
+
+
+## 2020/10/20
+# 原来aws linux的server给删了
+从新搞了个ubuntu的（希望能和自己pc的ubuntu相似一点）
+
+# 升级apt
+apt update
+apt upgrade
+
+# 安装JDK
+sudo apt install default-jdk
+
+# 安装Tomcat
+apt install tomcat9 tomcat9-user tomcat9-examples tomcat9-admin tomcat9-common tomcat9-docs
+
+# 安装npm
+apt install npm 
+
+# 安装vue-cli
+npm install --global vue-cli

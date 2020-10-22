@@ -1,8 +1,8 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>this is a test </h1>
+    <h2>{{ msg }}</h2>
     <h2>Essential Links</h2>
-    <h3>this is a test </h3>
     <ul>
       <li>
         <a

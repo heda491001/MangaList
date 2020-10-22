@@ -31,3 +31,39 @@ apt install npm
 
 # 安装vue-cli
 npm install --global vue-cli
+
+
+## 2020/10/21
+
+# 安装Jenkins
+wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+apt update
+apt upgrade
+apt install jenkins
+
+# jenkins 端口设置为 9090
+vi /etc/default/jenkins
+……
+HTTP_PORT=9090
+
+# Jenkins和apache连携设定  (失败 原因调查中)
+-- Jenkins设定 -------
+文件：/etc/default/jenkins
+将  JENKINS_ARGS=  的部分追加
+	JENKINS_ARGS="--prefix=/jenkins"
+-- Apache设定 -----
+ 文件：
+/etc/apache2/mods-available/proxy_html.conf
+追加：
+ProxyPass /jenkins http://localhost:9090/jenkins nocanon
+ProxyPassReverse /jenkins http://localhost:9090/jenkins
+ProxyRequests Off
+AllowEncodedSlashes NoDecode
+
+<Proxy http://localhost:9090/jenkins*>
+  Order deny,allow
+  Allow from all
+</Proxy>
+
+# Jenkins上安装git和pipeline的plugin

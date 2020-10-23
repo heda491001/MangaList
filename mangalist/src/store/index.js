@@ -10,6 +10,6 @@ Vue.use(Vuex)
   ストアにモジュールを登録
 */
 export default new Vuex.Store({
-    strict: true,
-    modules: {}
+  strict: true,
+  modules: {}
 })

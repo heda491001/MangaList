@@ -1,7 +1,11 @@
 <template>
   <div class="hello">
     <h1>list view</h1>
-    <p>to show all mangalist</p> 
+    <p>to show all mangalist</p>
+      <li v-for="product in products" :key="product.id">
+        {{ product.title }} - {{ product.price | currency }}
+        <br>
+      </li>
   </div>
 </template>
 
@@ -12,7 +16,11 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  created () {
+    this.$store.dispatch('products/getAllProducts')
   }
+
 }
 </script>
 

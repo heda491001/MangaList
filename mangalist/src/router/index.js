@@ -10,6 +10,12 @@ export default new Router({
   routes: [
     {
       path: '/',
+      name: 'home',
+      component: HelloWorld,
+      base: '/mangalist/'
+    },
+    {
+      path: '/HelloWorld',
       name: 'HelloWorld',
       component: HelloWorld,
       base: '/mangalist/'

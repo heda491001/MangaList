@@ -3,8 +3,6 @@
     <h1>this is a test </h1>
     <h2>{{ msg }}</h2>
     <p>a test home page here</p>
-    <router-link to="/add">add</router-link>
-    <router-link to="/list">list</router-link>
   </div>
 </template>
 

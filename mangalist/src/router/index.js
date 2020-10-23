@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/HelloWorld'
 import add from '@/components/add'
-import list from '@/components/lits'
+import list from '@/components/list'
 
 Vue.use(Router)
 

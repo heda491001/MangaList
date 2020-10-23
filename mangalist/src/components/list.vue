@@ -1,16 +1,13 @@
 <template>
   <div class="hello">
     <h1>list view</h1>
-    <p>
-        to show all mangalist
-    </p>
-    
+    <p>to show all mangalist</p> 
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'list',
   data () {
     return {
       msg: 'Welcome to Your Vue.js App'
@@ -18,7 +15,6 @@ export default {
   }
 }
 </script>
-
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>

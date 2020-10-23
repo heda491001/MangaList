@@ -1,11 +1,9 @@
 <template>
   <div class="hello">
-    <h1>this is a test </h1>
-    <h2>{{ msg }}</h2>
-    <p>a test home page here</p>
-
-    <router-link to="/add">add</router-link>
-    <router-link to="/list">list</router-link>
+    <h1>add view</h1>
+    <p>
+        add new record to the table 
+    </p>
     
   </div>
 </template>
@@ -20,6 +18,8 @@ export default {
   }
 }
 </script>
+
+
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
@@ -38,3 +38,4 @@ a {
   color: #42b983;
 }
 </style>
+

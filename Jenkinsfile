@@ -9,7 +9,7 @@ pipeline {
         stage("get source"){
             steps {
                 echo "get source code from github"
-                git credentialsId: '15aa0d48-c9cf-430e-af37-9f0be4719419', url: 'https://github.com/hesai1/MangaList.git'
+                git branch: 'dev', credentialsId: '15aa0d48-c9cf-430e-af37-9f0be4719419', url: 'https://github.com/hesai1/MangaList.git'
             }
         }
         stage('build') {

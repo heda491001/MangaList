@@ -3,7 +3,7 @@
     <h1>list view</h1>
     <p>to show all mangalist</p>
       <li v-for="record in records" :key="record.id">
-        {{ record.title }} - {{ record.price | currency }}
+        {{ record.title }} - {{ record.price }}
         <br>
       </li>
   </div>
@@ -12,15 +12,9 @@
 <script>
 export default {
   name: 'list',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  },
   created () {
     this.$store.dispatch('records/getAllRecords')
   }
-
 }
 </script>
 

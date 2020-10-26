@@ -3,7 +3,7 @@
     <h1>this is a test </h1>
     <h2>{{ msg }}</h2>
     <p>update time</p>  
-    <p>2020/10/26 18:00</p>  
+    <p>2020/10/26 18:49</p>  
   </div>
 </template>
 

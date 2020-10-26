@@ -2,7 +2,8 @@
   <div class="hello">
     <h1>this is a test </h1>
     <h2>{{ msg }}</h2>
-    <p>a test home page here</p>
+    <p>a test home page here</p>  
+    <p>2020/10/26 1800</p>  
   </div>
 </template>
 
@@ -11,7 +12,7 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      msg: 'main'
     }
   }
 }

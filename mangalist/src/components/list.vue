@@ -6,6 +6,7 @@
         {{ record.title }} - {{ record.price }}
         <br>
       </li>
+      <p>asdasd</p>
   </div>
 </template>
 

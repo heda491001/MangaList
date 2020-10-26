@@ -67,3 +67,8 @@ AllowEncodedSlashes NoDecode
 </Proxy>
 
 # Jenkins上安装git和pipeline的plugin
+
+
+
+## 2020/10/26
+# git hub webhook 追加

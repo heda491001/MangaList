@@ -18,9 +18,9 @@ export default {
     }
   },
   created () {
-    this.$store.dispatch('products/getAllProducts')
+    this.$store.dispatch('records/getAllRecords')
   }
-
+  
 }
 </script>
 

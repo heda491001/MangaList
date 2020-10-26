@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>list view</h1>
     <p>to show all mangalist</p>
-      <li v-for="product in products" :key="product.id">
+      <li v-for="record in records" :key="record.id">
         {{ product.title }} - {{ product.price | currency }}
         <br>
       </li>
@@ -20,7 +20,7 @@ export default {
   created () {
     this.$store.dispatch('records/getAllRecords')
   }
-  
+
 }
 </script>
 

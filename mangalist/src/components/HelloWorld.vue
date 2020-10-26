@@ -2,8 +2,8 @@
   <div class="hello">
     <h1>this is a test </h1>
     <h2>{{ msg }}</h2>
-    <p>a test home page here</p>  
-    <p>2020/10/26 1800</p>  
+    <p>update time</p>  
+    <p>2020/10/26 18:00</p>  
   </div>
 </template>
 

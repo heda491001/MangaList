@@ -12,11 +12,10 @@
           highlight-hover-row
           :align="allAlign"
           :data="recordslist">
-          <vxe-table-column type="seq" title="序号" width="60"></vxe-table-column>
-          <vxe-table-column field="name" title="Name"></vxe-table-column>
-          <vxe-table-column field="sex" title="Sex"></vxe-table-column>
-          <vxe-table-column field="age" title="Age"></vxe-table-column>
-          <vxe-table-column field="address" title="Address"></vxe-table-column>
+          <vxe-table-column type="seq" title="seq" width="60"></vxe-table-column>
+          <vxe-table-column field="title" title="title"></vxe-table-column>
+          <vxe-table-column field="price" title="price"></vxe-table-column>
+          <vxe-table-column field="inventory" title="inventory"></vxe-table-column>
         </vxe-table> -->
   </div>
 </template>

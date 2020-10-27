@@ -1,5 +1,7 @@
 <template>
   <div id="app">
+    <p>update time</p>  
+    <p>2020/10/27 14:27</p>  
     <router-link to="/HelloWorld">HelloWorld</router-link>
     <router-link to="/add">add</router-link>
     <router-link to="/list">list</router-link>

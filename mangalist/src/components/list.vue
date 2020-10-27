@@ -2,7 +2,8 @@
   <div class="hello">
     <h1>list view</h1>
     <p>to show all mangalist</p>
-      <li v-for="record in records" :key="record.id">
+      <li v-for="record in recordslist" :key="record.id">
+        <p>test</p>
         {{ record.title }} - {{ record.price }}
         <br>
       </li>
@@ -11,8 +12,13 @@
 </template>
 
 <script>
+import { mapState } from 'vuex'
+
 export default {
   name: 'list',
+  computed: mapState({
+    recordslist: state => state.records.all
+  }),
   created () {
     this.$store.dispatch('records/getAllRecords')
   }

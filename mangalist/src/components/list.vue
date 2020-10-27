@@ -5,7 +5,7 @@
       <li v-for="record in recordslist" :key="record.id">
         {{ record.title }} - {{ record.price }}  - {{record.inventory}} 
       </li>
-      <vxe-table
+      <!-- <vxe-table
           border
           show-header-overflow
           show-overflow
@@ -17,7 +17,7 @@
           <vxe-table-column field="sex" title="Sex"></vxe-table-column>
           <vxe-table-column field="age" title="Age"></vxe-table-column>
           <vxe-table-column field="address" title="Address"></vxe-table-column>
-        </vxe-table>
+        </vxe-table> -->
   </div>
 </template>
 

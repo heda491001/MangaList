@@ -10,9 +10,9 @@
           :align="allAlign"
           :data="recordslist">
           <vxe-table-column type="seq" sortable title="seq" width="60"></vxe-table-column>
-          <vxe-table-column field="title" sortable title="title">
+          <vxe-table-column field="title" sortable title="title" :filters="[{ data: '' }]" :filter-method="filterMethod">
             <template v-slot:filter="{ $panel, column }">
-              <input type="title" v-for="(option, index) in column.filters" :key="index" v-model="option.data" @input="$panel.changeOption($event, !!option.data, option)">
+              <input type="type" v-for="(option, index) in column.filters" :key="index" v-model="option.data" @input="$panel.changeOption($event, !!option.data, option)">
             </template>
           </vxe-table-column>
           <vxe-table-column field="price" sortable title="price"></vxe-table-column>
@@ -31,6 +31,11 @@ export default {
   }),
   created () {
     this.$store.dispatch('records/getAllRecords')
+  },
+  methods: {
+    filterMethod ({ option, row }) {
+      return row.title === option.data
+    }
   }
 }
 </script>

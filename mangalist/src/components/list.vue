@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     filterMethod ({ option, row }) {
-      return row.title === option.data
+      return String(row.title).startsWith(option.data)
     }
   }
 }

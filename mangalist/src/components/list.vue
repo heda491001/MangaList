@@ -4,9 +4,23 @@
     <p>to show all mangalist</p>
       <li v-for="record in recordslist" :key="record.id">
         {{ record.title }} - {{ record.price }}  - {{record.inventory}} 
-      </li><br/>
+      </li>
+      
+    <vxe-table　size="medium"　:data="tableData">
+      <vxe-table-column type="title" width="60"></vxe-table-column>
+    　<vxe-table-column type="price" width="60"></vxe-table-column>
+      <vxe-table-column type="inventory" width="60"></vxe-table-column>
+    </vxe-table>
   </div>
 </template>
+
+
+
+ <!-- 引入样式 -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vxe-table/lib/style.css">
+<!-- 引入脚本 -->
+<script src="https://cdn.jsdelivr.net/npm/xe-utils"></script>
+<script src="https://cdn.jsdelivr.net/npm/vxe-table"></script>
 
 <script>
 import { mapState } from 'vuex'

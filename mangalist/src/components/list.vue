@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>list view</h1>
     <p>to show all records</p>
-    <button @click="reloadList">reload</button>
+    <button @click="reloadList()">reload</button><br>
       <vxe-table
           border
           show-header-overflow

@@ -8,6 +8,9 @@ export default {
         headers: {
           'Accept-Language': 'ja',
           'Accept': 'application/json',
+          "Access-Control-Allow-Headers" : "Content-Type",
+          "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
+          'Access-Control-Allow-Origin': '*',
           'Content-Type': 'application/json',
         },
         timeout: 60000

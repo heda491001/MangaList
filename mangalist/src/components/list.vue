@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>list view</h1>
     <p>to show all records</p>
-    <button @click="reloadList"></button>
+    <button @click="reloadList">reload</button>
       <vxe-table
           border
           show-header-overflow
@@ -59,5 +59,8 @@ li {
 }
 a {
   color: #42b983;
+}
+button {
+  float:left;
 }
 </style>

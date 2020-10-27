@@ -8,7 +8,7 @@ import Api from '@/api/api'
 
 export default {
   getRecord_demo(cb) {
-    const temp = Api.instance().post('https://c1vdx9kkf4.execute-api.ap-northeast-1.amazonaws.com/dev','{}')
+    const temp = Api.instance().get('/getRecordsList','{}')
     console.log(temp)
     setTimeout(() => cb(temp.body), 100)
   }

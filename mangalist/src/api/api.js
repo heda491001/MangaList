@@ -4,6 +4,7 @@ import axios from 'axios'
 export default {
     instance () {
       var api = axios.create({
+        baseURL: 'https://c1vdx9kkf4.execute-api.ap-northeast-1.amazonaws.com/dev',
         withCredentials: true,
         headers: {
           'Accept-Language': 'ja',

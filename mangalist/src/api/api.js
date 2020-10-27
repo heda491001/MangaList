@@ -1,4 +1,4 @@
-import store from '@/store'
+// import store from '@/store'
 import axios from 'axios'
 
 export default {
@@ -12,5 +12,6 @@ export default {
         },
         timeout: 60000
       })
+      return api
     }
 }

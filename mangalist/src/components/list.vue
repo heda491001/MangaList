@@ -1,10 +1,7 @@
 <template>
   <div class="hello">
     <h1>list view</h1>
-    <p>to show all mangalist</p>
-      <li v-for="record in recordslist" :key="record.id">
-        {{ record.title }} - {{ record.price }}  - {{record.inventory}} 
-      </li>
+    <p>to show all records</p>
       <vxe-table
           border
           show-header-overflow
@@ -12,10 +9,14 @@
           highlight-hover-row
           :align="allAlign"
           :data="recordslist">
-          <vxe-table-column type="seq" title="seq" width="60"></vxe-table-column>
-          <vxe-table-column field="title" title="title"></vxe-table-column>
-          <vxe-table-column field="price" title="price"></vxe-table-column>
-          <vxe-table-column field="inventory" title="inventory"></vxe-table-column>
+          <vxe-table-column type="seq" sortable title="seq" width="60"></vxe-table-column>
+          <vxe-table-column field="title" sortable title="title">
+            <template v-slot:filter="{ $panel, column }">
+              <input type="title" v-for="(option, index) in column.filters" :key="index" v-model="option.data" @input="$panel.changeOption($event, !!option.data, option)">
+            </template>
+          </vxe-table-column>
+          <vxe-table-column field="price" sortable title="price"></vxe-table-column>
+          <vxe-table-column field="inventory" sortable title="inventory"></vxe-table-column>
         </vxe-table>
   </div>
 </template>

@@ -23,12 +23,6 @@
 
 <script>
 import { mapState } from 'vuex'
-import Vue from 'vue'
-import VXETable from 'vxe-table'
-import 'xe-utils'
-import 'vxe-table/lib/style.css'
-
-Vue.use(VXETable)
 
 export default {
   name: 'list',

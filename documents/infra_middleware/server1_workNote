@@ -75,3 +75,7 @@ AllowEncodedSlashes NoDecode
 # test commit
 试了两次，最终还是放弃了
 主要是不太实用，每次从新启动AWS分配的pub DNS地址都会变更，github上的设定也得跟着变更
+
+## 2020/10/27
+# 尝试追加 xe-utils vxe-table
+npm install xe-utils vxe-table

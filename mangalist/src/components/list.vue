@@ -3,8 +3,8 @@
     <h1>list view</h1>
     <p>to show all mangalist</p>
       <li v-for="record in recordslist" :key="record.id">
-        {{ record.title }} - {{ record.price }}
-      </li>
+        {{ record.title }} - {{ record.price }}  - {{record.inventory}} 
+      </li><br/>
   </div>
 </template>
 

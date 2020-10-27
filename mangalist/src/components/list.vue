@@ -5,25 +5,30 @@
       <li v-for="record in recordslist" :key="record.id">
         {{ record.title }} - {{ record.price }}  - {{record.inventory}} 
       </li>
-      
-    <vxe-table　size="medium"　:data="tableData">
-      <vxe-table-column type="title" width="60"></vxe-table-column>
-    　<vxe-table-column type="price" width="60"></vxe-table-column>
-      <vxe-table-column type="inventory" width="60"></vxe-table-column>
-    </vxe-table>
+      <vxe-table
+          border
+          show-header-overflow
+          show-overflow
+          highlight-hover-row
+          :align="allAlign"
+          :data="recordslist">
+          <vxe-table-column type="seq" title="序号" width="60"></vxe-table-column>
+          <vxe-table-column field="name" title="Name"></vxe-table-column>
+          <vxe-table-column field="sex" title="Sex"></vxe-table-column>
+          <vxe-table-column field="age" title="Age"></vxe-table-column>
+          <vxe-table-column field="address" title="Address"></vxe-table-column>
+        </vxe-table>
   </div>
 </template>
 
-
-
- <!-- 引入样式 -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vxe-table/lib/style.css">
-<!-- 引入脚本 -->
-<script src="https://cdn.jsdelivr.net/npm/xe-utils"></script>
-<script src="https://cdn.jsdelivr.net/npm/vxe-table"></script>
-
 <script>
 import { mapState } from 'vuex'
+import Vue from 'vue'
+import VXETable from 'vxe-table'
+import 'xe-utils'
+import 'vxe-table/lib/style.css'
+
+Vue.use(VXETable)
 
 export default {
   name: 'list',

@@ -10,6 +10,6 @@ export default {
   getRecord_demo(cb) {
     const temp = Api.instance().post('https://c1vdx9kkf4.execute-api.ap-northeast-1.amazonaws.com/dev','{}')
     console.log(temp)
-    setTimeout(() => cb(temp), 100)
+    setTimeout(() => cb(temp.body), 100)
   }
 }

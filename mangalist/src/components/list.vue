@@ -2,6 +2,7 @@
   <div class="hello">
     <h1>list view</h1>
     <p>to show all records</p>
+    <button @click="reloadList"></button>
       <vxe-table
           border
           show-header-overflow
@@ -35,6 +36,9 @@ export default {
   methods: {
     filterMethod ({ option, row }) {
       return String(row.title).startsWith(option.data)
+    },
+    reloadList () {
+      this.$store.dispatch('records/getAllRecords')
     }
   }
 }

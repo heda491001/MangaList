@@ -13,7 +13,7 @@ export default {
           "Access-Control-Allow-Headers" : "application/json",
           "Access-Control-Allow-Methods": "OPTIONS,POST,GET",
           'Access-Control-Allow-Origin': '*',
-          'Content-Type': 'application/json',
+          'Content-Type': 'application/json'
         },
         timeout: 60000
       })
